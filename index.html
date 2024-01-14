@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://raw.githubusercontent.com/bageler1/rpgex/main/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/bageler1/rpgex/main/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bvambient.css">
     <title>RPGex</title>
     <style>
         body {
@@ -16,13 +20,14 @@
         header {
             text-align: center;
             padding: 20px;
-            background-color: #f2f2f2;
+            background-color: #7251ae;
+            font-family: 'Tektur', sans-serif;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #515FAE;
             padding: 10px;
         }
 
@@ -46,26 +51,44 @@
 </head>
 
 <body>
-
     <header>
-        <h1>RpgEx. The best external.</h1>
+        <h1>RPGex, the best external aimbot for Roblox.</h1>
     </header>
-
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
     </nav>
-
     <main>
-        <h2>Welcome to Your Website!</h2>
-        <p>This is a basic HTML template for your website. You can customize it according to your needs.</p>
+        <h2>Welcome to RGPex, the best aimbot for Roblox.</h2>
+        <p>RPGex, the ultimate undetected aimbot for Roblox, is a game-changing utility crafted by a squad of underground devs This bad boy doesn't just boost your aiming skills; it does it with such invisibility that it's completely undetected by the Byfron and Hyperion anticheats. Created by a small, rebellious crew, RPGex is a testament to how a little ingenuity can outsmart the big guns. So, gear up, lock and load – RPGex is the secret weapon for those who play to win, undetected and unstoppable.</p>
     </main>
-
     <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p>&copy; 2024 RGPex. All rights reserved.</p>
     </footer>
-
+    <script src="js/bvambient.js">
+      
+    </script>
+    <div id="ambient" style="overflow:hidden; position:absolute; width:100%; height:10vh;">
+      
+    </div>
+    <script name="init">
+      document.addEventListener("DOMContentLoaded", function() {
+            var demo1 = new BVAmbient({
+                  selector: "#ambient",
+                  fps: 120,
+                  max_transition_speed: 12000,
+                  min_transition_speed: 8000,
+                  particle_number: 100,
+                  particle_maxwidth: 50,
+                  particle_minwidth: 20,
+                  particle_radius: 50,
+                  particle_opacity: true,
+                  particle_colision_change: true,
+                  particle_background: "#A051AE"
+            });
+      });
+    </script>
 </body>
 
 </html>
